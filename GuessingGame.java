@@ -54,6 +54,20 @@ public class GuessingGame {
             System.out.printf("The Game Random Number is : %d\n", random_number);
         }
     }
+
+    // Asks user if they want to play again
+    public static void Play_Again() {
+        System.out.println("I hope you enjoyed the Game:)");
+        System.out.println("Do you want to play Again : Y/N ");
+        Scanner sc = new Scanner(System.in);
+        String play_input = sc.next();
+        if (play_input.toUpperCase().charAt(0) == 'N') {
+            Game_Status = false;
+        } else {
+            userTries = 0;
+        }
+    }
+
     // Main
     public static void main(String[] Args) {
         while (Game_Status) {
