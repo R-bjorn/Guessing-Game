@@ -54,13 +54,13 @@ public class GuessingGame {
             System.out.printf("The Game Random Number is : %d\n", random_number);
         }
     }
-
     // Main
     public static void main(String[] Args) {
         while (Game_Status) {
             Intro_Greeting();
             Random_Gen();
             User_Input();
+            // User_Input();
             // Play_Again();
         }
     }
