@@ -74,8 +74,7 @@ public class GuessingGame {
             Intro_Greeting();
             Random_Gen();
             User_Input();
-            // User_Input();
-            // Play_Again();
+            Play_Again();
         }
     }
 }
