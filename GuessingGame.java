@@ -23,11 +23,43 @@ public class GuessingGame {
         System.out.println("The Game has generated a Random Number!");
     }
 
+    // Getting the input from the User!
+    public static void User_Input() {
+        System.out.print("\nTake you Guess :- ");
+        userInput = sc.nextInt();
+        Win_Or_Lose();
+    }
+
+    // Check if the user guessed the Random Number
+    public static void Win_Or_Lose() {
+        if (userTries < 4) {
+            if (random_number == userInput) {
+                System.out.println("\nYou Got It!!!");
+                System.out.printf("The Random Number was %d,\nAnd You Guess it in %d Tries!\n\n", userInput,
+                        (userTries + 1));
+            } else {
+                userTries++;
+                System.out.println("\nOOPS!!!");
+                if (random_number < userInput) {
+                    System.out.println("Your Guess is Higher than Game Random Number.");
+                } else {
+                    System.out.println("Your Guess is Lower than Game Random Number.");
+                }
+                System.out.printf("You Have %d Tries left!\n", (5 - userTries));
+                System.out.println("Guess again!");
+                User_Input();
+            }
+        } else {
+            System.out.println("\nYou used all your Tries!!");
+            System.out.printf("The Game Random Number is : %d\n", random_number);
+        }
+    }
     // Main
     public static void main(String[] Args) {
         while (Game_Status) {
             Intro_Greeting();
             Random_Gen();
+            User_Input();
             // User_Input();
             // Play_Again();
         }
