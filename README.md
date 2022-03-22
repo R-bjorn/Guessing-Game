@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 # Guessing-Game
-**Guessing game** is a game in which the `player` has to correctly guess the answer. The game generates a `random number` between **_1_** to **_100_** and gives player **5 tries** to guess the random number. After each guess, game shows if your guess is higher or lower than the random number. If you guess the number, You *Win*!
+> **Guessing game** is a game in which the `player` has to correctly guess the answer. The game generates a `random number` between **_1_** to **_100_** and gives player **5 tries** to guess the random number. After each guess, game shows if your guess is higher or lower than the random number. If you guess the number, You *Win*!
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
